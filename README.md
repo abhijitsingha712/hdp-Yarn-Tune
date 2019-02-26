@@ -9,26 +9,26 @@ To find the parameters detaills use below commands ->>
 
 To get core (c) information : 
 
-#lscpu | grep -i core
+      lscpu | grep -i core
 
 To get memory(m) information : 
 
-#free -h
+      free -h
 
 To get disks(d) information : 
 
-#lsblk
+      lsblk
+      
+Require Python version 2.8 or less. 
 
-#./yarn-utils --help for more info.
+      python2 yarn-utils --help for more info.
 
 
 Example:
 
-#git clone https://github.com/abhijitsingha712/hdp-yarn-tunning.git
+cd hdp-Yarn-Tune/scripts
 
-#cd hdp-yarn-tunning/yarn-utils/
-
-#yarn-utils.py -c 16 -m 64 -d 4 -k True
+python2 yarn-utils.py -c 16 -m 64 -d 4 -k True
 
 
 by default the script uses the following:
